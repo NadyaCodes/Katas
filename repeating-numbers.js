@@ -8,20 +8,20 @@
 
 const repeatNumbers = function(data) {
 
-  let finalString = ''
+  let finalString = '';
 
   for (let arr of data) {
     for (let i = 0; i < arr[1]; i++) {
-      finalString += arr[0].toString()
+      finalString += arr[0].toString();
     }
-    finalString += ', '
+    finalString += ', ';
   }
 
-  const answer = finalString.slice(0, -2)
+  const answer = finalString.slice(0, -2);
 
-  return answer
+  return answer;
 
-}
+};
 
 console.log(repeatNumbers([[1, 10]]));
 // 1111111111
